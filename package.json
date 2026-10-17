@@ -1,0 +1,14 @@
+{
+  "name": "rml-ajuda-sovarais",
+  "private": true,
+  "type": "module",
+  "description": "Central de Ajuda do Sóvarais (ajuda.sovaraisrecife.cloud)",
+  "scripts": {
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "1.6.4"
+  }
+}

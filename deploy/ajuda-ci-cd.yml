@@ -1,0 +1,98 @@
+# Copiar este arquivo para .github/workflows/ajuda-ci-cd.yml
+name: Central de Ajuda CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+concurrency:
+  group: ajuda-prod
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      SSH_HOST: ${{ secrets.VPS_HOST }}
+      SSH_USER: ${{ secrets.VPS_USER }}
+      SSH_PORT: ${{ secrets.VPS_PORT }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          fetch-depth: 0          # "Atualizado em" de cada artigo vem do histórico do git
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Package
+        run: tar -C docs/.vitepress/dist -czf ajuda-dist.tgz .
+
+      - name: Check secrets
+        run: |
+          missing=0
+          for v in SSH_HOST SSH_USER; do
+            if [ -z "${!v}" ]; then echo "::error::Secret ausente para $v"; missing=1; fi
+          done
+          if [ -z "${{ secrets.VPS_SSH_KEY }}" ]; then echo "::error::Secret VPS_SSH_KEY ausente"; missing=1; fi
+          exit $missing
+
+      - name: Setup SSH key
+        env:
+          SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" | tr -d '\r' > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          ssh-keyscan -p "${SSH_PORT:-22}" "$SSH_HOST" >> ~/.ssh/known_hosts
+          cat > ~/.ssh/config <<EOF
+          Host vps
+            HostName ${SSH_HOST}
+            User ${SSH_USER}
+            Port ${SSH_PORT:-22}
+            IdentityFile ~/.ssh/deploy_key
+            IdentitiesOnly yes
+          EOF
+
+      - name: Copy to VPS
+        run: scp ajuda-dist.tgz vps:/tmp/ajuda-dist.tgz
+
+      - name: Deploy on VPS
+        run: |
+          ssh vps 'bash -s' <<'EOF'
+          set -euo pipefail
+          TARGET_DIR="/opt/sovarais/infra/www/ajuda"
+          STAGE_DIR="$(mktemp -d)"
+          tar -xzf /tmp/ajuda-dist.tgz -C "${STAGE_DIR}"
+          rm -f /tmp/ajuda-dist.tgz
+          test -f "${STAGE_DIR}/index.html" || { echo "index.html não encontrado no artefato"; exit 1; }
+          mkdir -p "${TARGET_DIR}"
+          # assets novos primeiro, páginas depois, e só então apaga o que sobrou da versão anterior
+          rsync -a "${STAGE_DIR}/assets/" "${TARGET_DIR}/assets/"
+          rsync -a --delete "${STAGE_DIR}/" "${TARGET_DIR}/"
+          rm -rf "${STAGE_DIR}"
+          echo "Central de Ajuda publicada em ${TARGET_DIR}"
+          EOF
+
+      - name: Smoke test
+        run: |
+          sleep 3
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 https://ajuda.sovaraisrecife.cloud/ || true)
+          echo "HTTP ${code}"
+          [ "$code" = "200" ] || echo "::warning::ajuda.sovaraisrecife.cloud não respondeu 200 (o bloco do Caddy já foi publicado pelo BFF?)"
