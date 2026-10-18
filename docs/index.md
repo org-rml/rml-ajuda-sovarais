@@ -20,16 +20,28 @@ features:
     link: /agenda/
   - icon: 📝
     title: Pedidos
-    details: Cadastrar um pedido, acompanhar a situação e o histórico, lembretes de contato.
+    details: Cadastrar, consultar, acompanhar o andamento e lembrar de ligar para o cliente.
     link: /pedidos/cadastrar
   - icon: 👤
     title: Clientes
-    details: Cadastro e consulta de clientes.
+    details: Cadastro, consulta, marcadores de atenção e endereços.
     link: /clientes/
-  - icon: 🔐
-    title: Usuários
-    details: Quem pode ver e fazer o quê no sistema.
-    link: /usuarios/
+  - icon: 📦
+    title: Produtos e serviços
+    details: O que a empresa vende e cobra, com preço e estoque.
+    link: /produtos/
+  - icon: 📊
+    title: Relatórios
+    details: Vendas, visitas, mais vendidos e planilhas para baixar.
+    link: /relatorios/
+  - icon: ⚙️
+    title: Configurações
+    details: Dados da empresa, PIX, renovações, permissões e histórico.
+    link: /configuracoes/dados-empresa
+  - icon: ✨
+    title: Assistente
+    details: Pergunte sobre vendas e pedidos em linguagem do dia a dia.
+    link: /assistente/
   - icon: ❓
     title: Perguntas frequentes
     details: As dúvidas que mais aparecem no dia a dia.

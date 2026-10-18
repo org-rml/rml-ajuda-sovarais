@@ -14,9 +14,17 @@ export default defineConfig({
     nav: [
       { text: 'Início', link: '/' },
       { text: 'Perguntas frequentes', link: '/faq' },
+      { text: 'Sobre', link: '/sobre' },
       { text: 'Abrir o sistema', link: 'https://sovaraisrecife.cloud' },
     ],
     sidebar: [
+      {
+        text: 'Primeiros passos',
+        items: [
+          { text: 'Tela inicial', link: '/inicio/' },
+          { text: 'Assistente', link: '/assistente/' },
+        ],
+      },
       {
         text: 'Agenda',
         items: [
@@ -31,17 +39,32 @@ export default defineConfig({
         text: 'Pedidos',
         items: [
           { text: 'Cadastrar um pedido', link: '/pedidos/cadastrar' },
+          { text: 'Consultar pedidos', link: '/pedidos/consultar' },
+          { text: 'Pedidos de um cliente', link: '/pedidos/por-cliente' },
           { text: 'Situação e histórico do pedido', link: '/pedidos/historico' },
           { text: 'Lembretes para ligar ao cliente', link: '/pedidos/lembretes' },
         ],
       },
       {
-        text: 'Clientes',
-        items: [{ text: 'Cadastro de clientes', link: '/clientes/' }],
+        text: 'Cadastros',
+        items: [
+          { text: 'Clientes', link: '/clientes/' },
+          { text: 'Produtos', link: '/produtos/' },
+          { text: 'Serviços', link: '/servicos/' },
+          { text: 'Usuários', link: '/usuarios/' },
+        ],
       },
       {
-        text: 'Usuários',
-        items: [{ text: 'Gestão de usuários e permissões', link: '/usuarios/' }],
+        text: 'Relatórios',
+        items: [{ text: 'Relatórios', link: '/relatorios/' }],
+      },
+      {
+        text: 'Configurações',
+        items: [
+          { text: 'Dados da empresa', link: '/configuracoes/dados-empresa' },
+          { text: 'Gestão de usuários e permissões', link: '/configuracoes/gestao-usuarios' },
+          { text: 'Histórico de registros', link: '/configuracoes/historico' },
+        ],
       },
       {
         text: 'Dúvidas',
@@ -78,7 +101,7 @@ export default defineConfig({
     },
     footer: {
       message: 'Dúvida que não está aqui? Fale com o suporte.',
-      copyright: 'Sóvarais Recife',
+      copyright: `Sóvarais © ${new Date().getFullYear()} · Desenvolvido por Rodrigo Moreira Lima`,
     },
   },
 })

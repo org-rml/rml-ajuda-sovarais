@@ -1,22 +1,43 @@
 # Cadastrar um pedido
 
-O cadastro do pedido é dividido em partes: **Cliente**, **O que vai ser feito**, **Quando e onde**, **Pagamento**, **Outras informações** e, no fim, o **Resumo**.
+O pedido (ou orçamento) registra o que vai ser feito para o cliente, quando e onde, e quanto custa. É a partir dele que a visita entra na agenda, o técnico recebe o pedido impresso e a equipe acompanha o andamento até o serviço ser concluído.
 
-<!-- PRINT: tela de cadastro do pedido, primeira parte -->
+**Neste artigo, você vai ver:**
+
+1. [Cliente](#_1-cliente)
+2. [O que vai ser feito](#_2-o-que-vai-ser-feito)
+3. [Quando e onde](#_3-quando-e-onde)
+4. [Pagamento e resumo](#_4-pagamento-e-resumo)
+5. [Outras informações](#_5-outras-informacoes)
+6. [Salvar e imprimir](#_6-salvar-e-imprimir)
+7. [Editar um pedido](#_7-editar-um-pedido)
+
+::: info Na prática
+No menu lateral, acesse **Cadastros › Pedidos / Orçamentos** e abra a aba **Criar**. O formulário é dividido em passos numerados, de cima para baixo.
+:::
 
 ## 1. Cliente
 
-1. Busque o cliente pelo nome ou telefone.
-2. Se ele ainda não existir, cadastre na hora.
-3. Ao escolher o cliente, aparece **Pedidos deste cliente** com os pedidos anteriores dele (5 por página). Use para conferir se o serviço já não foi cadastrado.
-4. Se o cliente tiver algum alerta cadastrado, ele aparece nesta parte.
+![Passos 1 e 2 de um pedido novo](/img/pedidos/novo-cliente-itens.png)
+
+1. Em **Quem é o cliente?**, digite o nome, CPF, e-mail ou telefone e escolha o cliente na lista.
+2. Se ele ainda não existir, clique em **Cadastrar cliente novo** (no canto do passo). Depois de salvar o cliente, o sistema volta para o pedido.
+
+Ao escolher o cliente, aparecem:
+
+- o telefone principal e os links **Editar cliente** e **Trocar**;
+- os **marcadores de atenção** do cliente, em vermelho, se houver;
+- **Pedidos deste cliente**: os pedidos anteriores dele, 5 por página. Use para conferir se o serviço já não foi cadastrado.
+
+![Cliente escolhido, com os pedidos anteriores](/img/pedidos/cliente.png)
 
 ## 2. O que vai ser feito
 
-1. Em **Buscar produto ou serviço**, procure e adicione os itens.
-2. Ajuste quantidade e valor de cada item, se precisar.
-3. Se houver desconto, escolha o tipo (valor ou porcentagem) e informe.
-4. Em **Detalhes do serviço (opcional)**, descreva o que precisa ser feito.
+1. Em **Buscar produto ou serviço**, digite o nome ou o código e escolha o item. Os botões <span class="botao">+ Produto</span> e <span class="botao">+ Serviço</span> limitam a busca a um dos tipos.
+2. Ajuste a **quantidade**, o **preço** e o **desconto** de cada item, se precisar. Para tirar um item, clique na lixeira.
+3. Em **Detalhes do serviço (opcional)**, descreva o que precisa ser feito.
+
+![Itens do pedido](/img/pedidos/itens.png)
 
 ::: tip Sai no pedido impresso
 O texto de **Detalhes do serviço** sai no pedido impresso, no campo **Observações**. Escreva pensando no técnico que vai ler.
@@ -24,23 +45,59 @@ O texto de **Detalhes do serviço** sai no pedido impresso, no campo **Observaç
 
 ## 3. Quando e onde
 
-1. Confira o endereço da visita.
-2. Escolha o dia e o horário. Os **atalhos de data** ajudam a marcar rápido.
-3. Se ainda não sabe o dia, deixe a data **a combinar**. O pedido aparece em **Precisa de atenção › Sem data marcada** até alguém marcar.
-4. Se o botão <span class="botao">Sugerir melhor dia</span> estiver disponível para você, ele indica dias com visitas perto do mesmo endereço.
+![Passo Quando e onde de um pedido novo](/img/pedidos/quando-onde.png)
 
-## 4. Pagamento
+| Campo | Para que serve |
+|---|---|
+| **Dia da visita** | Dia em que o técnico vai ao cliente. Os atalhos **Hoje**, **Amanhã** e **A combinar** preenchem rápido. |
+| **Horário** | Opcional. Ajuda a montar a rota do dia. |
+| **Sugerir melhor dia** | Mostra dias em que já há visitas perto do endereço do cliente. Aparece para quem tem essa permissão. |
+| **Vai até o cliente?** | **Sim, no endereço** (visita) ou **Cliente retira na loja**. |
+| **Onde vai ser a visita?** | Escolha um dos endereços cadastrados do cliente. |
 
-Informe a forma e a condição de pagamento.
-
-::: info Pode ficar para depois
-Dá para informar o pagamento mais tarde, editando o pedido ou ao dar baixa no serviço.
+::: warning Sem data
+Deixando **A combinar**, o pedido fica em **Precisa de atenção › Sem data marcada** na agenda até alguém combinar o dia com o cliente.
 :::
+
+## 4. Pagamento e resumo
+
+![Pagamento e resumo do pedido](/img/pedidos/pagamento-resumo.png)
+
+- **Forma de pagamento** e **Condição**: podem ficar para depois. Dá para informar ao editar o pedido ou ao dar baixa no serviço.
+- **Frete (R$)**: valor de entrega, se houver.
+- **Resumo**: soma de produtos, serviços, descontos e frete. Em **Desconto no total**, escolha **R$** (valor) ou **%** (porcentagem).
 
 ## 5. Outras informações
 
-**Observações (opcional)**: anotação interna da equipe. Fica guardada no pedido para consulta e **não** aparece no pedido impresso.
+![Outras informações e botões do pedido](/img/pedidos/outras-info.png)
 
-## 6. Resumo e salvar
+| Campo | Para que serve |
+|---|---|
+| **Data do pedido** | Data de emissão. Pode ser até o dia da visita. |
+| **Vendedor** | Quem fez a venda. |
+| **Observações (opcional)** | Anotação interna da equipe. Fica guardada no pedido e **não** aparece no pedido impresso. |
 
-Confira o resumo e salve. O pedido passa a aparecer na agenda do dia marcado.
+## 6. Salvar e imprimir
+
+- <span class="botao">Salvar</span>: grava o pedido. Se tiver data, ele entra na agenda do dia.
+- <span class="botao">Imprimir</span>: gera o pedido impresso para o técnico.
+- <span class="botao">Limpar</span>: apaga tudo o que foi preenchido.
+
+## 7. Editar um pedido
+
+Abra o pedido pela [consulta](./consultar) (menu **⋮ › Editar**), pela [agenda](../agenda/) ou pela busca por cliente. Na edição aparecem dois blocos a mais:
+
+- **Andamento do serviço**, no topo: mostra a situação da visita e os botões para registrar o que aconteceu. Veja [Situação e histórico do pedido](./historico).
+- Botões no fim do formulário: **Voltar**, **Cancelar** (cancela o pedido), **Imprimir**, **Atualizar** (salva as mudanças) e **Finalizar**.
+
+::: tip Data da visita na edição
+Num pedido já salvo, a data da visita não é trocada no passo 3. Para marcar ou remarcar, use os botões do **Andamento do serviço**.
+:::
+
+![Passo Quando e onde na edição](/img/pedidos/quando-onde-edicao.png)
+
+## Veja também
+
+- [Consultar pedidos](./consultar)
+- [Pedidos de um cliente](./por-cliente)
+- [Dar baixa em uma visita](../agenda/dar-baixa)

@@ -1,18 +1,57 @@
-# Gestão de usuários e permissões
+# Cadastro de usuários
 
-Em **Gestão de usuários**, quem administra o sistema define o que cada pessoa pode ver e fazer.
+Cada pessoa que usa o sistema tem o seu próprio usuário, com nome, perfil e senha. Assim o histórico mostra quem fez cada coisa e cada um vê só o que precisa.
 
-1. Abra **Gestão de usuários**.
-2. Escolha o usuário.
-3. Marque ou desmarque as permissões. Elas aparecem agrupadas por área (Pedidos, Agenda etc.), cada uma com a explicação do que libera.
-4. Salve.
+**Neste artigo, você vai ver:**
 
-<!-- PRINT: tela de permissões de um usuário -->
+1. [Consultar usuários](#_1-consultar-usuarios)
+2. [Cadastrar um usuário](#_2-cadastrar-um-usuario)
+3. [Editar, inativar ou excluir](#_3-editar-inativar-ou-excluir)
 
-::: tip Quando a mudança vale
-A pessoa passa a ver a mudança da próxima vez que entrar no sistema. Se ela já estiver com o sistema aberto, peça para sair e entrar de novo.
+::: info Na prática
+No menu lateral, acesse **Cadastros › Usuários**. A tela tem as abas **Criar** e **Consultar**.
 :::
 
-## Exemplo: esconder o "Sugerir melhor dia"
+## 1. Consultar usuários
 
-A permissão **Sugerir melhor dia** mostra o botão de mesmo nome no cadastro do pedido e ao remarcar uma visita. Desmarque para esconder esse botão para um usuário específico.
+![Consulta de usuários](/img/usuarios/consulta.png)
+
+- **Busca:** por nome, usuário ou perfil.
+- **Status:** **Todos**, **Ativos** ou **Inativos**.
+
+## 2. Cadastrar um usuário
+
+![Formulário de usuário](/img/usuarios/formulario.png)
+
+**Dados do usuário**
+
+| Campo | Obrigatório | Para que serve |
+|---|---|---|
+| **Nome completo** | Sim | Nome da pessoa, com pelo menos 3 letras. |
+| **Perfil** | Sim | **Administrador**, **Gerente** ou **Vendedor**. O perfil define as permissões padrão. |
+
+**Acesso**
+
+| Campo | Para que serve |
+|---|---|
+| **Username** | Nome usado para entrar no sistema, com pelo menos 5 letras. |
+| **Senha gerada automaticamente** | O sistema cria uma senha segura. Use os botões ao lado para **ver**, **copiar** ou **gerar outra**. |
+| **Configurar senha manualmente** | Ligue para digitar a senha você mesmo (mínimo de 6 caracteres) e confirmar. |
+
+Clique em <span class="botao">Salvar</span> e passe o username e a senha para a pessoa.
+
+::: tip Permissões individuais
+Depois de criar o usuário, ajuste o que ele pode ver e fazer em [Gestão de usuários](../configuracoes/gestao-usuarios).
+:::
+
+## 3. Editar, inativar ou excluir
+
+Na aba **Consultar**, use os botões da coluna **Ações**:
+
+- **lápis**: editar. Na edição dá para **alterar a senha** do usuário;
+- **círculo cortado**: inativar. O usuário inativo não consegue entrar, mas o nome dele continua no histórico;
+- **lixeira**: excluir.
+
+::: tip
+Quando alguém sai da empresa, prefira **inativar** o usuário.
+:::
