@@ -25,6 +25,12 @@ Não. Dá para informar depois, editando o pedido ou ao dar baixa no serviço.
 ### Como vejo os pedidos antigos de um cliente?
 Em **Pedidos / Orçamentos › Buscar**, escolha o cliente: aparecem todos os pedidos dele, com o histórico de cada um. Veja [Pedidos de um cliente](./pedidos/por-cliente).
 
+### Tenho dois pedidos no mesmo prédio. O sistema avisa?
+Sim. No cadastro do pedido, em **Quando e onde**, ao escolher o endereço aparece o aviso de visita no mesmo prédio ou perto, com o botão **Agendar junto**. Veja [Visitas no mesmo prédio](./pedidos/cadastrar#visitas-no-mesmo-predio).
+
+### Dá para o sistema encaixar pedidos na agenda de um dia?
+Sim, pelo Assistente: pergunte "tem pedido que dá para encaixar na terça?". Ele mostra os encaixes num cartão; você desmarca o que não quiser e confirma. Veja [Encaixar pedidos](./assistente/#_5-encaixar-pedidos-na-agenda-do-dia).
+
 ### Posso aproveitar um pedido antigo para fazer outro igual?
 Sim. Na consulta de pedidos, use **⋮ › Duplicar**. Veja [Consultar pedidos](./pedidos/consultar).
 

@@ -59,6 +59,18 @@ O texto de **Detalhes do serviço** sai no pedido impresso, no campo **Observaç
 Deixando **A combinar**, o pedido fica em **Precisa de atenção › Sem data marcada** na agenda até alguém combinar o dia com o cliente.
 :::
 
+### Visitas no mesmo prédio
+
+Ao escolher o endereço, o sistema procura outros pedidos no mesmo prédio ou perto dali e mostra até 3 avisos logo abaixo:
+
+- **"Já tem visita no Edifício ..."** ou **"Tem visita a 150 m daqui"**, com o pedido, o técnico e o dia da outra visita.
+- Se a outra visita já tem data, clique em <span class="botao">Agendar junto</span>: este pedido é marcado para o mesmo dia, no horário logo depois da outra visita e com o mesmo técnico. O aviso passa a mostrar **Marcado junto**.
+- Se o outro pedido também está sem data, o aviso sugere combinar os dois para o mesmo dia, com o link **Abrir pedido**.
+
+::: tip
+O [Assistente](../assistente/#_5-encaixar-pedidos-na-agenda-do-dia) também faz essa busca para um dia inteiro e encaixa vários pedidos de uma vez.
+:::
+
 ## 4. Pagamento e resumo
 
 ![Pagamento e resumo do pedido](/img/pedidos/pagamento-resumo.png)
