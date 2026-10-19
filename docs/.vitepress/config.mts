@@ -100,7 +100,6 @@ export default defineConfig({
       linkText: 'Voltar ao início',
     },
     footer: {
-      message: 'Dúvida que não está aqui? Fale com o suporte.',
       copyright: `Sóvarais © ${new Date().getFullYear()} · Desenvolvido por Rodrigo Moreira Lima`,
     },
   },
