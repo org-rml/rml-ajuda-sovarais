@@ -1,6 +1,6 @@
 # Precisa de atenção
 
-A coluna **Precisa de atenção** junta os pedidos que alguém precisa resolver. Cada aba é um tipo de pendência, e o número na aba mostra quantos pedidos há nela.
+A coluna **Precisa de atenção** junta os pedidos que alguém precisa resolver. Cada aba é um tipo de pendência, e o número na aba mostra quantos pedidos há nela. Passe o mouse no **ⓘ** ao lado do título para ler um resumo do que entra nesta lista.
 
 ![Coluna Precisa de atenção](/img/agenda/precisa-atencao.png)
 
@@ -21,23 +21,23 @@ Só aparecem as abas que têm pedidos, na ordem de urgência: primeiro o que est
 Um pedido sai desta coluna sozinho assim que a pendência é resolvida. Não precisa apagar nada.
 :::
 
-Cada aba mostra **5 pedidos por vez**; use **Próxima** e **Anterior** para ver os outros. O **Selecionar todos para imprimir** marca os pedidos da aba para [imprimir de uma vez](./imprimir).
+Cada aba mostra **5 pedidos por vez**; use **Próxima** e **Anterior** para ver os outros. O quadradinho **Selecionar**, no canto do título, marca os pedidos da aba para [imprimir de uma vez](./imprimir).
 
 ## Arrastar para marcar ou remarcar
 
 No computador, dá para marcar a visita **arrastando o pedido com o mouse**:
 
 1. No topo da agenda, escolha o dia em que a visita vai acontecer (hoje, amanhã ou outro dia).
-2. Em **Precisa de atenção**, clique no cartão do pedido, segure o botão do mouse e arraste até a coluna **Visitas de hoje** (ou **Visitas do dia**).
+2. Em **Precisa de atenção**, clique no cartão do pedido (dá para pegar pela alça **⋮⋮** à esquerda do nome), segure o botão do mouse e arraste até a coluna **Visitas de hoje** (ou **Visitas do dia**).
 3. A coluna fica marcada com um tracejado e mostra para qual dia a visita vai. Solte o pedido.
 4. Pronto: a visita é marcada (ou remarcada, se o pedido já tinha data) **na hora**, para aquele dia e **sem horário**. Aparece um aviso de confirmação, o pedido entra nas visitas do dia e sai de **Precisa de atenção**.
 
-<!-- PRINT: pedido sendo arrastado para Visitas de hoje, com a coluna tracejada -->
+![Pedido sendo arrastado para Visitas de hoje, com a coluna tracejada e o aviso "Solte aqui"](/img/agenda/arrastar.png)
 
 Funciona nas abas que têm o botão de marcar ou remarcar: **Falta dar baixa**, **Sem nova data**, **Esperando o cliente** e **Sem data marcada**.
 
 ::: tip Precisa de horário ou anotação?
-Arrastar marca só o dia. Para escolher o horário ou escrever uma anotação, use o botão <span class="botao">Remarcar</span> no cartão, já nas visitas do dia. Soltou no dia errado? Arraste de novo em outro dia ou use <span class="botao">Remarcar</span>. A troca fica registrada no histórico do pedido, como pelos botões.
+Arrastar marca só o dia. Para escolher o horário ou escrever uma anotação, use o botão <span class="botao">Remarcar</span> no cartão, já nas visitas do dia. Soltou no dia errado? Use <span class="botao">Remarcar</span> no cartão para escolher o dia certo. A troca fica registrada no histórico do pedido, como pelos botões.
 :::
 
 ::: info Quando não dá para arrastar

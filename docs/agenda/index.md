@@ -10,22 +10,26 @@ A agenda é a tela para começar o dia. Ela mostra as visitas marcadas e tudo o 
 4. [Precisa de atenção](#_4-precisa-de-atencao)
 
 ::: info Na prática
-No menu lateral, clique em **Agenda do dia**. A tela tem duas partes: **Visitas do dia** e **Precisa de atenção**. Em telas largas elas ficam lado a lado; no celular, uma embaixo da outra.
+No menu lateral, clique em **Agenda do dia**. No topo fica a barra do dia; embaixo, duas partes: **Visitas do dia** e **Precisa de atenção**. Em telas largas elas ficam lado a lado; no celular, uma embaixo da outra.
 :::
 
 ![Agenda do dia](/img/agenda/visitas.png)
 
 ## 1. Escolher o dia
 
-- Use as setas **‹** e **›** ao lado da data para ir ao dia anterior ou ao próximo.
-- Para ir direto a uma data, clique no campo de data e escolha no calendário.
+A barra no topo da agenda mostra o dia e reúne tudo o que muda de dia:
+
+- Use as setas **‹** e **›** para ir ao dia anterior ou ao próximo.
+- Para ir direto a uma data, **clique no próprio dia** (ex.: *Hoje · sábado, 7 de novembro de 2026*) e escolha no calendário que abre logo abaixo.
 - Fora do dia de hoje, aparece o link **Voltar para hoje**.
-- O botão **Organizar rota do dia** mostra a melhor ordem das visitas no mapa. Veja [Organizar a rota do dia](./rota-do-dia).
+- O botão **Organizar rota de hoje** (ou **do dia**) mostra a melhor ordem das visitas no mapa. Veja [Organizar a rota do dia](./rota-do-dia).
+- À direita, o resumo do dia: quantas **visitas**, quantas já foram **feitas** e quantas **faltam**.
 
 ## 2. Visitas do dia
 
-- O número ao lado de **Visitas do dia** mostra quantas visitas há no dia; o contador verde mostra quantas já foram feitas.
-- A lista mostra **5 visitas por vez**. Use **Próxima** e **Anterior** para ver as demais.
+- O número ao lado de **Visitas do dia** mostra quantas visitas há no dia.
+- Em cima ficam as visitas que ainda pedem ação, **5 por vez**. Use **Próxima** e **Anterior** para ver as demais.
+- As visitas que já foram feitas ficam recolhidas embaixo, numa linha como *2 visitas já feitas hoje*. Clique nela para ver a lista.
 - Num dia que já passou, o sistema avisa: registre o que aconteceu nas visitas que ainda estão sem baixa.
 
 ## 3. O cartão da visita
@@ -34,8 +38,8 @@ Cada visita aparece num cartão com:
 
 - o **horário** e o **nome do cliente**;
 - o número do pedido e o que vai ser feito;
-- o endereço e o telefone principal (o ícone ao lado copia o número);
-- a situação, numa etiqueta colorida no canto (ex.: *Falta dar baixa*);
+- o endereço e o telefone (o ícone ao lado copia o número);
+- a situação, numa etiqueta colorida ao lado do nome (ex.: *Falta dar baixa*);
 - os botões do que dá para fazer: <span class="botao">Foi feito</span>, <span class="botao">Não foi feito</span>, <span class="botao">Remarcar</span> e outros, conforme a situação;
 - o link **Abrir pedido** e a lixeira, para quem pode excluir pedidos.
 
@@ -45,7 +49,7 @@ Para registrar o que aconteceu, veja [Dar baixa em uma visita](./dar-baixa).
 
 ## 4. Precisa de atenção
 
-Junta, separado em abas, tudo o que está pendente: visitas que passaram sem baixa, serviços sem nova data, clientes para ligar e outros. O pedido some dali assim que alguém registra o que aconteceu. Veja [Precisa de atenção](./precisa-de-atencao).
+Junta, separado em abas, tudo o que está pendente: visitas que passaram sem baixa, serviços sem nova data, clientes para ligar e outros. O pedido some dali assim que alguém registra o que aconteceu. Passe o mouse no **ⓘ** ao lado do título para ler a explicação. No computador, dá para arrastar um pedido dessa coluna até as visitas do dia para marcar a visita. Veja [Precisa de atenção](./precisa-de-atencao).
 
 ::: tip
 Se aparecer **Tudo em dia! Nenhum pedido esquecido.**, não há nada pendente.
