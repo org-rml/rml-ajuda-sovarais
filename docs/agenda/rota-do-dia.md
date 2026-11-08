@@ -11,7 +11,7 @@ O sistema calcula a ordem das visitas que faz o técnico rodar menos e mostra tu
 ## 1. Abrir a rota
 
 1. Na agenda, escolha o dia.
-2. Clique em **Organizar rota de hoje** (ou **do dia**, se for outro dia). O botão só aparece quando há visitas no dia.
+2. Clique em **Organizar rota de hoje** (ou **do dia**, se for outro dia), o botão tracejado na barra do dia, no topo da agenda. Ele só aparece quando há visitas no dia.
 
 ## 2. Entender a tela
 

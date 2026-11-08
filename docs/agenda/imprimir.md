@@ -2,7 +2,7 @@
 
 Dá para imprimir vários pedidos de uma vez, direto da agenda.
 
-1. Marque o quadradinho dos pedidos que quer imprimir. Para marcar todos de uma lista, use **Selecionar todas para imprimir** no topo da lista.
+1. Marque o quadradinho dos pedidos que quer imprimir. Para marcar todos de uma lista, use o quadradinho no canto do título da coluna: **Selecionar para imprimir** (Visitas do dia) ou **Selecionar** (Precisa de atenção).
 2. No rodapé da tela aparece uma barra com a quantidade de pedidos selecionados.
 3. Clique em <span class="botao">Imprimir</span>. O sistema gera um arquivo com todos os pedidos.
 4. Para desmarcar tudo, clique em **Limpar** na mesma barra.
