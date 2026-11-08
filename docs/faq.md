@@ -14,6 +14,12 @@ Abra a agenda, volte para o dia de ontem (ou use a aba **Falta dar baixa**) e re
 ### Como vejo a melhor ordem das visitas do dia?
 Na agenda, clique em **Organizar rota do dia**. Veja [Organizar a rota do dia](./agenda/rota-do-dia).
 
+### Dá para marcar uma visita arrastando o pedido?
+Sim, no computador. Escolha o dia no topo da agenda e arraste o pedido de **Precisa de atenção** até **Visitas de hoje** (ou **Visitas do dia**). A visita é marcada na hora, sem horário. Veja [Arrastar para marcar ou remarcar](./agenda/precisa-de-atencao#arrastar-para-marcar-ou-remarcar).
+
+### A agenda ficou em "Carregando..." ou disse que demorou demais. O que faço?
+Clique em **Tentar de novo**. Se a busca demorar mais de 20 segundos, a agenda para de esperar e mostra esse botão. Se continuar acontecendo, confira a internet e avise o responsável pelo sistema, dizendo o horário em que aconteceu.
+
 ## Pedidos
 
 ### Qual campo sai no pedido impresso?

@@ -66,6 +66,10 @@ O pedido fica em **Precisa de atenção** até alguém marcar a visita.
 
 Para deixar o pedido sem data, clique em **Tirar a data (deixar a combinar)**.
 
+::: tip Atalho no computador
+Também dá para arrastar o pedido de **Precisa de atenção** até **Visitas de hoje** (ou do dia escolhido no topo). A visita é remarcada na hora para aquele dia, sem horário. Veja [Arrastar para marcar ou remarcar](./precisa-de-atencao#arrastar-para-marcar-ou-remarcar).
+:::
+
 ## 5. Anotar
 
 Para registrar uma informação sem mudar a situação do pedido, clique em <span class="botao">Anotar</span>, escreva e clique em **Salvar anotação**. A anotação fica no histórico do pedido com a data de hoje e o seu nome.
